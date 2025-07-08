@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <!-- Main Heading -->
+  <div class="text-center mb-5" style="backdrop-filter: blur(8px); background: rgba(255,255,255,0.3); border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+    <h1 class="text-danger" style="font-weight: bold;">About Us</h1>
+    <h2 class="text-pink">Pacharapon Phumpin <span class="badge bg-pink"></span></h2>
+    <p class="lead text-secondary"></p>
+  </div>
+  <!-- Vision -->
+  <div class="p-4 mb-4 rounded" style="background: rgba(255,230,240,0.6); backdrop-filter: blur(8px); box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+    <h3 class="text-pink">My 
+birthday</h3>
+    <p>21/02/2006 Am18Year</p>
+    <hr>
+    <h5 class="text-danger mt-3">Activities during free time</h5>
+    <p>
+    
+    </p>
+    <ul class="ms-3">
+      <li>Find something to keep yourself from getting bored.</li>
+      <li>Play with friends</li>
+      <li>Play games, watch movies, listen to music.</li>
+      <li>Watch someone teach programming</li>
+    </ul>
+  </div>
+</div>
+<!-- Custom Pink Color -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+  body {
+    background: url('https://4kwallpapers.com/images/walls/thumbs_3t/6865.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .text-pink {
+    color:rgb(0, 0, 0);
+  }
+  .bg-pink {
+    background-color: #f8d7da;
+    color:rgb(0, 0, 0);
+  }
+  /* Apply Archivo Black to About Us and Pacharapon Phumpin */
+  h1.text-danger[style],
+  h2.text-pink {
+    font-family: 'Archivo Black', Arial, sans-serif !important;
+    letter-spacing: 1px;
+  }
+</style>
+{% endblock %}

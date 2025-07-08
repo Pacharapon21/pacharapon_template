@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+  body {
+    background-image: url('https://www.chromethemer.com/download/hd-wallpapers/super-mario-bros-1920x1080.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<div class="container-fluid mt-4 d-flex justify-content-center align-items-center" style="min-height: 90vh;">
+  <div class="card w-100 shadow" style="max-width: 1200px; background-color: rgba(255,255,255,0.7); backdrop-filter: blur(2px);">
+    <div class="card-body text-center">
+      <!-- รูปโปรไฟล์ (แทนหัวข้อ) -->
+      <img src="https://scontent.fubp1-1.fna.fbcdn.net/v/t39.30808-6/428614200_1093180445284970_476619500704015776_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0i_3xdLiMqIQ7kNvwHz_iy0&_nc_oc=AdleeQk74zmfSwUzyo2ZeIki6jUyrCfcB8SxU1Z02Z-tFiEoPvU2kuGVHLbrmWY7t7Mzvm9HRDyOlIVh7ykbI4Dg&_nc_zt=23&_nc_ht=scontent.fubp1-1.fna&_nc_gid=us6a8mkQqTWNGZF6bXp24g&oh=00_AfQUCN9GZ459kgRyTkkeX2WXvENt0lZrWLfP5Tl82GLiXg&oe=6872B45A" alt="Profile" class="rounded-circle shadow mb-4 border border-warning border-3" width="180" height="180">
+
+      <!-- ชื่อ (แทนที่รูปเดิม) -->
+      <h1 class="display-4 mb-3 text-pink fw-bold bungee-font">Pacharapon Welcome</h1>
+
+      <!-- คำอธิบายสั้น -->
+      <p class="lead text-secondary">กรุณาloginเพื่อเข้าสู่ระบบ</p>
+
+      <!-- การ์ดแนะนำตัว -->
+      <div class="mt-4">
+        <h5 class="card-title text-danger">Login</h5>
+        <form method="post" action="#">
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your e-mail" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- เพิ่มฟอนต์ Bungee สำหรับชื่อ, เปลี่ยนสีเมนูเป็นขาว -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+.bungee-font {
+  font-family: 'Bungee', cursive, sans-serif;
+}
+.text-pink {
+  color:rgb(0, 0, 0);
+}
+/* เมนู sidebar สีขาว */
+.nav-link, .sidebar .nav-link, .sidebar .nav-link span, .sidebar .nav-link i {
+  color: #fff !important;
+}
+</style>
+{% endblock %}
