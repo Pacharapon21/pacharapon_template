@@ -29,7 +29,8 @@
       <!-- การ์ดแนะนำตัว -->
       <div class="mt-4">
         <h5 class="card-title text-danger">Login</h5>
-        <form method="post" action="#">
+        <form method="post" action="">
+          {% csrf_token %}
           <div class="mb-3">
             <label for="email" class="form-label">E-mail</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Enter your e-mail" required>
