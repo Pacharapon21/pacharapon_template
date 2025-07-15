@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'My__projact.urls'
+ROOT_URLCONF = 'vercel_deploy.urls'
 
 TEMPLATES = [
     {
@@ -122,17 +122,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-# เพิ่มบรรทัดนี้
-ALLOWED_HOSTS = ['*']
-
-# เพิ่มที่ท้ายไฟล์
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     Path.joinpath(BASE_DIR, 'statics'),]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
