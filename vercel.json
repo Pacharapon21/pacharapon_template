@@ -1,9 +1,8 @@
-
 {
   "version": 2,
   "builds": [
     {
-      "src": "vercel_deploy/wsgi.py",
+      "src": "manage.py",
       "use": "@vercel/python"
     }
   ],
@@ -14,7 +13,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "vercel_deploy/wsgi.py"
+      "dest": "manage.py"
     }
   ]
 }
